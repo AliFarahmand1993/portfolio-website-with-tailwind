@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- icon  -->
-  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
   <!-- Style Sheet -->
   <link rel="stylesheet" href="./assets/output/output.css">
   <link rel="stylesheet" href="./assets/css/main.css">
@@ -36,15 +36,20 @@
 <body class="bg-body text-white font-poppins pb-12">
 
   <!-- header start -->
-  <header class="py-6">
-    <div class="container flex justify-between items-center mx-auto">
-      <div class="text-lg">Ali.Farahmand</div>
+  <header class="py-12">
+    <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 ">
+      <div class="text-lg py-2 font-semibold">Ali.Farahmand</div>
       <nav>
-        <ul class="flex space-x-12">
-          <li><a href="" class="text-sky-600">Home</a></li>
-          <li><a href="">My work</a></li>
-          <li><a href="">Client</a></li>
-          <li><a href=""><button>Send mesaage</a></button></li>
+        <ul class="hidden md:flex space-x-12">
+          <li><a href="#" class="text-sky-600">Home</a></li>
+          <li><a href="#" class="hover:text-sky-600">My work</a></li>
+          <li><a href="#" class="hover:text-sky-600">Client</a></li>
+          <li><a href="#" class="bg-theme py-2 px-4 font-semibold rounded hover:bg-violet-600">Send mesaage</a></li>
+        </ul>
+      </nav>
+      <nav class="md:hidden ">
+        <i class="fa-solid fa-bars text-lg"></i>
+        <ul class="md:hidden space-x-12">
         </ul>
       </nav>
     </div>
