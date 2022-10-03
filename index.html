@@ -41,10 +41,10 @@
       <div class="text-lg py-2 font-semibold">Ali.Farahmand</div>
       <nav>
         <ul class="hidden md:flex space-x-12">
-          <li><a href="#" class="text-sky-600">Home</a></li>
-          <li><a href="#" class="hover:text-sky-600">My work</a></li>
-          <li><a href="#" class="hover:text-sky-600">Client</a></li>
-          <li><a href="#" class="bg-theme py-2 px-4 font-semibold rounded hover:bg-violet-600">Hire me</a></li>
+          <li><a href="/" class="text-sky-600">Home</a></li>
+          <li><a href="#work" class="hover:text-sky-600">My work</a></li>
+          <li><a href="#clients" class="hover:text-sky-600">Clients</a></li>
+          <li><a href="#hire" class="bg-theme py-2 px-4 font-semibold rounded hover:bg-violet-600">Hire me</a></li>
         </ul>
       </nav>
       <nav class="md:hidden ">
@@ -70,17 +70,17 @@
                 </a>
               </li>
               <li class="px-2 py-2">
-                <a href="#" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                <a href="#work" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
                   <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Work</span>
                 </a>
               </li>
               <li class="px-2 py-2">
-                <a href="#" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-                  <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Client</span>
+                <a href="#clients" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                  <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Clients</span>
                 </a>
               </li>
               <li class="px-2 py-2">
-                <a href="#" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                <a href="#hire" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
                   <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Hire</span>
                 </a>
               </li>
@@ -95,11 +95,11 @@
             expeience.
           </h1>
           <div class="w-full flex justify-center md:justify-start">
-            <button
+            <a href="#work"
               class="bg-theme py-3 px-6 mt-12 font-bold rounded-lg flex items-center space-x-3 hover:bg-violet-600"">
               <i class=" fa-solid fa-eye"></i>
-              <span>My Work</span>
-            </button>
+               <span>My Work</span>
+          </a>
           </div>
         </div>
         <img src="./assets/images/man.png" alt="building-website"
@@ -109,9 +109,9 @@
     <!-- banner area end -->
 
     <!-- work section start -->
-    <section class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <section id="work"  class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full" >
       <div class="w-full">
-        <h2 id="work" class="secondary-title">My Work</h2>
+        <h2 class="secondary-title">My Work</h2>
         <p class="section-paragraph">I've had the pleasure of working with multiple Fortune 500 companies, designing and
           implementing both frontend and backend.</p>
         <ul class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-6 mt-6">
@@ -128,12 +128,11 @@
     <!-- work section end -->
 
     <!-- client section start -->
-    <section class="container mt-32 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <section id="clients" class="container mt-32 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
       <div class="w-full">
-        <h2 id="clients" class="secondary-title">Clients</h2>
+        <h2 class="secondary-title">Clients</h2>
         <p class="section-paragraph">I’ve had the pleasure of working with multiple Fortune 20 companies, designing and
           implementing both frontend and backend.</p>
-
         <!-- customer 1  -->
         <div
           class="w-full mb-10 border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
@@ -218,33 +217,52 @@
     </section>
     <!-- client section end -->
     <!-- Hire me section start -->
-    <section class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <section id="hire" class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
       <div class="w-full">
-        <h2 id="work" class="secondary-title">Hire me</h2>
+        <h2 class="secondary-title">Hire me</h2>
         <p class="section-paragraph">Feel free to to contact me any time, through any method below.</p>
         <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
+          <!-- form -->
           <form action="#">
             <div class="space-y-12">
               <div>
                 <label for="fullname" class="text-white block mb-6 text-xl font-bold">Name</label>
-                <input type="text" class="w-full border border-input-border bg-input px-4 py-4 rounded-lg" name="fullname"
-                  id="fullname">
+                <input type="text" class="w-full border border-input-border bg-input px-4 py-4 rounded-lg"
+                  name="fullname" id="fullname">
               </div>
               <div>
                 <label for="email" class="text-white block mb-6 text-xl font-bold">Email</label>
-                <input type="email" class="w-full border border-input-border bg-input px-4 py-4 rounded-lg" name="email" id="email">
+                <input type="email" class="w-full border border-input-border bg-input px-4 py-4 rounded-lg" name="email"
+                  id="email">
               </div>
-              <label for="message" class="text-white block mb-6 text-xl font-bold" >Message</label>
+              <label for="message" class="text-white block mb-6 text-xl font-bold">Message</label>
               <textarea type="textarea"
-                class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none rounded-lg" name="message" id="message"></textarea>
+                class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none rounded-lg" name="message"
+                id="message"></textarea>
               <button class="bg-theme py-3 px-6 mt-12 font-bold rounded-lg space-x-3 hover:bg-violet-600"">
                 Send it!
-              </button>
-          </form>
+              </a>
+            </div>
+           </form>
+                <!-- contact me -->
+               <div class=" mt-20">
+                <h6 class="text-white text-2xl font-bold">Contact-Me:</h6>
+                <p class="text-secondary text-2xl mt-5"><a href="tel:">Call-Me:<span
+                      class="text-white ml-2">555-555-1234</span></a>
+                </p>
+                <p class="text-secondary mt-5 block text-2xl">
+                  <a href=" mailto:AliFarahmand1993@gmail.com">Email:<span
+                      class="text-white ml-2 ">AliFarahmand1993@gmail.com</span></a>
+                </p>
+                <ul class="flex space-x-6 mt-8">
+                  <li><a href=" #"><i class="fa-brands fa-twitter text-4xl""></i></a></li>
+                  <li><a href=" #"><i class="fa-brands fa-facebook text-4xl""></i></a></li>
+                  <li><a href=" #"><i class="fa-brands fa-skype text-4xl""></i></a></li>
+                  <li><a href=" #"><i class="fa-brands fa-instagram text-4xl""></i></a></li>
+                  <li><a href=" #"><i class="fa-brands fa-telegram text-4xl""></i></a></li>
+                </ul>
+              </div>
         </div>
-      </div>
-
-      </div>
       </div>
     </section>
     <!-- Hire me section end -->
