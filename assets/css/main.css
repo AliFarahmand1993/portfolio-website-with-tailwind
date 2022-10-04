@@ -627,14 +627,6 @@ video {
   margin-top: 3rem;
 }
 
-.-mt-6 {
-  margin-top: -1.5rem;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
-}
-
 .mt-64 {
   margin-top: 16rem;
 }
@@ -667,12 +659,12 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .mt-8 {
@@ -1062,11 +1054,13 @@ body {
   color: rgb(2 132 199 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
-  .md\:absolute {
-    position: absolute;
+@media (min-width: 640px) {
+  .sm\:mt-14 {
+    margin-top: 3.5rem;
   }
+}
 
+@media (min-width: 768px) {
   .md\:my-36 {
     margin-top: 9rem;
     margin-bottom: 9rem;
